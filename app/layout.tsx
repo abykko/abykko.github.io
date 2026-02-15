@@ -17,11 +17,12 @@ const options: MeshGradientOptions = {
     "#2C5364",
     "#4CA1AF"
   ]
-};;
+};
+
 export function MeshBg() {
   return (
     <MeshGradient
-      className="-z-10 shadow-lg absolute top-0 left-0 w-full h-full pointer-events-none"
+      className="-z-10 w-full h-2000 absolute top-0"
       style={{ width: '100%', height: '100%' }}
       options={options}
     />

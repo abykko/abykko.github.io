@@ -14,7 +14,7 @@ const socials = [
   },
 ]
 
-export function PictureSection() {
+export default function PictureSection() {
   return (
     <div className="grid grid-cols-6 items-center">
       <Image
@@ -39,9 +39,6 @@ export function PictureSection() {
             ))}
           </div>
           <div className="inline-flex gap-4 mt-12">
-            <ButtonPill textCopy={"ismaelah102@gmail.com"}>
-              <FiCopy className='mt-1 font-black' /> ismaelah102@gmail.com
-            </ButtonPill>
             <ButtonPill textCopy={"ismaelah102@gmail.com"}>
               <FiCopy className='mt-1 font-black' /> ismaelah102@gmail.com
             </ButtonPill>

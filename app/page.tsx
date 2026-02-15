@@ -1,24 +1,27 @@
 import { ReactNode } from "react";
-import AboutAndTechnologies from "./components/AboutAndTechnologies";
-import { PictureSection } from "./components/PictureSection";
+import AboutAndExp from "./components/AboutAndExp";
+import PictureSection from "./components/PictureSection";
 import Degrees from "./components/Degrees";
+import Technologies from "./components/Technologies";
 
 export function CvContainer({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
+    <div className="w-1/1 h-1/1 pt-16 max-h-screen overflow-scroll">
       <div
         className="
+          flex
+          flex-col items-center
+          justify-center
           w-4/6
-          p-12
-          mt-18
+          p-16
           mx-auto
-          backdrop-contrast-150
-          backdrop-brightness-90
-          backdrop-blur-xl
-          backdrop-saturate-100
+          backdrop-contrast-130
+          backdrop-brightness-85
+          backdrop-blur-lg
+          backdrop-saturate-110
           bg-gray-100/10
           shadow-xl
-          rounded-4xl
+          rounded-lg
         "
       >
         {children}
@@ -31,7 +34,12 @@ export default function Home() {
   return (
     <CvContainer>
       <PictureSection />
-      <AboutAndTechnologies />
+      <div className="flex flex-row pt-15 pl-4">
+        <div className="flex-col">
+          <AboutAndExp />
+        </div>
+        <Technologies />
+      </div>
       <Degrees />
     </CvContainer>
   );
