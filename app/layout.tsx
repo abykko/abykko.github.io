@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import { Noto_Sans } from "next/font/google";
-const pcu = Noto_Sans({
- weight: ['400'],
+import { Google_Sans } from "next/font/google";
+const pcu = Google_Sans({
+ weight: [],
  display: 'swap',
 });
 

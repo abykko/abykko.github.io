@@ -12,7 +12,7 @@ export default function Education() {
                 backdrop-blur-lg backdrop-saturate-120
                 relative
             ">
-                <div className="text-xl font-semibold text-white">
+                <div className="text-xl font-semibold text-white max-w-8/10">
                     {degree.title}
                 </div>
                 <div className="text-gray-300 font-medium">
@@ -26,7 +26,7 @@ export default function Education() {
     }
 
     return (
-        <div className="">
+        <div>
             {degrees.map((e, index) => (
                 <Card key={index} degree={e} />
             ))}

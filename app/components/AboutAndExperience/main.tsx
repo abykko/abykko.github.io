@@ -9,7 +9,7 @@ function Title({ text, subtext, mt}: { text: string; subtext?: string; mt?: numb
         <div className={`flex justify-between items-center text-4xl font-extrabold mt-${mt}`}>
             <span>{text}</span>
             {subtext && (
-                <span className="text-2xl font-normal">
+                <span className="text-2xl font-normal text-gray-200">
                     {subtext}
                 </span>
             )}
@@ -22,9 +22,9 @@ export default function AboutAndExp() {
         <div className="max-w-8/10 text-white">
             <Title text="About" />
             <About />
-            <Title text="Overall Experience" subtext="+6 years in total" mt={8} />
+            <Title text="Overall Experience" subtext="+ 6 years in total" mt={8} />
             <OverallExperience />
-            <Title text="Job Experience" subtext='+1 year in total' mt={8}/>
+            <Title text="Job Experience" subtext='+ 1 year in total' mt={8}/>
             <JobExperiences />
         </div>
     );

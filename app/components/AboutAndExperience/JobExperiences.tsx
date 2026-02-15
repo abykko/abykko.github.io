@@ -18,7 +18,7 @@ export default function JobExperiences(): ReactNode {
         function Header({ text, subtext, mt }: { text: string; subtext?: string; mt?: number }): ReactNode {
             return (
                 <div className={`text-2xl font-extrabold mt-${mt}`}>
-                    <div className=''>{text}</div>
+                    <div>{text}</div>
                     <div className='text-xl font-normal'>{subtext}</div>
                 </div>
             );
@@ -31,7 +31,7 @@ export default function JobExperiences(): ReactNode {
                 </div>
                 <p className="text-justify text-lg mt-2 pr-6 leading-5">
                     {description}
-                </p >
+                </p>
             </Card>
         );
     }
