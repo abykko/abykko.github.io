@@ -1,13 +1,8 @@
 import React, { ReactNode } from "react";
 
-export default function SkillPill({ text, icon }: {
-    text: string,
-    icon?: ReactNode,
-}): ReactNode {
+export default function SkillPill({ text, icon }: {text: string, icon?: ReactNode}): ReactNode {
 
-    text = text || "testing";
-    icon = icon || null;
-
+    // Set icon properties
     if (React.isValidElement(icon)) {
         icon = React.cloneElement(
             icon as React.ReactElement<{
@@ -22,7 +17,6 @@ export default function SkillPill({ text, icon }: {
             }
         );
     }
-
 
     return (
         <div className='inline-flex items-center p-[2px] rounded-2xl
