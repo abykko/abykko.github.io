@@ -1,4 +1,12 @@
 import type { Metadata } from "next";
+
+import { Noto_Sans } from "next/font/google";
+const pcu = Noto_Sans({
+ weight: ['400'],
+ display: 'swap',
+});
+
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="apple-font antialiased">
+      <body className={`${pcu.className}`}>
         {children}
         <MeshBg />
       </body>

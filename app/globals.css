@@ -1,27 +1,5 @@
 @import "tailwindcss";
 
-.apple-font {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    "SF Pro Display",
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.apple-mono {
-  font-family:
-    "SF Mono",
-    Menlo,
-    Monaco,
-    Consolas,
-    "Liberation Mono",
-    monospace;
-}
-
 @property --border-angle {
   syntax: "<angle>";
   inherits: false;
