@@ -3,11 +3,7 @@ import { ReactNode } from "react";
 export default function About(): ReactNode {
     return (
         <div className="text-2xl pt-4 text-justify">
-            Soy un desarrollador de software Español de 21 años. Conservo
-            la misma ilusión del principio en cada linea de código.
-            Puedes contar conmigo si buscas alguien con vocación, que no
-            se deja llevar por las modas y entiende
-            el esfuerzo que hay tras un buen producto.
+            I am a 21-year-old Spanish software developer. I still carry the same enthusiasm I had at the beginning in every line of code. You can count on me if you’re looking for someone with true vocation and who understands the effort behind a well-crafted product.
         </div>
     );
 }
