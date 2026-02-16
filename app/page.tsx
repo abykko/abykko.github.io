@@ -26,7 +26,9 @@ export function CvContainer({ children }: { children: ReactNode }) {
           2xl:w-5/7
           xl:rounded-lg
           xl:shadow-xl
-          px-20
+          px-2
+          md:px-10
+          lg:px-20
           py-15
           mx-auto
           bg-gray-100/10
@@ -42,7 +44,7 @@ export default function Home() {
   return (
     <CvContainer>
       <PictureSection />
-      <div className="flex flex-row pt-15 gap-x-30">
+      <div className="flex flex-col items-center pt-15 md:flex-row md:gap-x-20 lg:gap-x-30">
         <AboutAndExperience />
         <TechnologiesAndEducation/>
       </div>
