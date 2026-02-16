@@ -35,8 +35,8 @@ export default function PictureSection() {
         className="rounded-full justify-center-safe items-center place-content-center"
         src="/pictures/pic.jpg"
         alt="Abykko Logo"
-        width={300}
-        height={300}
+        width={290}
+        height={290}
       />
     );
   }
@@ -50,6 +50,7 @@ export default function PictureSection() {
       text-white
       text-center
       gap-8
+      px-3
       sm:items-left
       sm:justify-left
       md:text-left

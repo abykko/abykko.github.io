@@ -21,13 +21,13 @@ export const degrees: DegreeItem[] = [
         url: "https://www.davante.es"
     },
     {
-        title: "FP Superior Desarrollo de Aplicaciones Multiplataforma",
+        title: "FP Superior DAM",
         institution: "Davante",
         duration: "2022 - 2024",
         url: "https://www.davante.es"
     },
     {
-        title: "FP Medio en Sistemas Microinformáticos y Redes",
+        title: "FP Medio SMR",
         institution: "IES Mediterraneo",
         duration: "2020 - 2022",
         url: "https://iesmediterraneo.net"

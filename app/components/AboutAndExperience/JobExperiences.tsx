@@ -8,10 +8,18 @@ export default function JobExperiences(): ReactNode {
         function Card({ children }: { children: ReactNode }): ReactNode {
             return (
                 <div className="
-                mb-8 px-6 py-4 flex-col rounded-md
-                backdrop-blur-lg backdrop-saturate-120
-                backdrop-brightness-10 backdrop-contrast-200
-                ">{children}</div>
+                    mb-8 
+                    px-6
+                    py-4 
+                    flex-col 
+                    rounded-md
+                    backdrop-blur-lg 
+                    backdrop-saturate-120
+                    backdrop-brightness-10 
+                    backdrop-contrast-200
+                ">
+                    {children}
+                </div>
             );
         }
 
@@ -29,7 +37,7 @@ export default function JobExperiences(): ReactNode {
                 <div className="inline-flex items-center">
                     <Header text={role} subtext={`${date} | ${location} `} />
                 </div>
-                <p className="text-justify text-lg mt-2 pr-6 leading-5">
+                <p className="text-start text-lg mt-2 leading-5">
                     {description}
                 </p>
             </Card>

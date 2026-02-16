@@ -19,8 +19,7 @@ export default function CopyMailBtn({
                 bg-linear-to-t from-gray-800 to-cyan-900 hover:from-gray-900 hover:to-cyan-950
                 transition-colors duration-400 ease-in-out"
                 onClick={function copy() {
-                    if (textCopy)
-                        alert(textCopy)
+                    
                 }}>
                 {children}
             </div>
