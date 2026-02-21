@@ -7,6 +7,7 @@ import Education from "./Education";
 export default function TechnologiesAndEducation() {
 
     function Header({ text = "Test", mt = 0 }: { text: string; mt?: number; }): ReactNode {
+        mt = mt || 0;
         return (<h1 className={`text-4xl text-center font-extrabold text-white mt-${mt}`}>{text}</h1>);
     }
 
@@ -20,8 +21,8 @@ export default function TechnologiesAndEducation() {
     }
 
     return (
-        <div className="flex flex-col px-6 mt-6 text-center gap-15">
-            <div>
+        <div className="flex flex-col text-center gap-15 px-10">
+            <div id="tech">
                 <Header text="Technologies" />
                 <Section
                     header={<Parr text="Programming languages" />}
@@ -36,7 +37,7 @@ export default function TechnologiesAndEducation() {
                     content={<ToolsAndPlatforms />}
                 />
             </div>
-            <div>
+            <div id="edu">
                 <Header mt={48} text="Education" />
                 <Education />
             </div>

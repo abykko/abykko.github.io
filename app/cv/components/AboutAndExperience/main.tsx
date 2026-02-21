@@ -24,25 +24,17 @@ export default function AboutAndExp() {
     }
 
     return (
-        <div className="
-            max-w-8/10 
-            text-white 
-            justify-center 
-            flex 
-            flex-col 
-            gap-10
-            items-start
-        ">
+        <div className="flex flex-col max-w-10/12 gap-10 mx-auto text-white">
             <Section
                 header={<Title text="About me" />}
                 content={<About />}
             />
             <Section
-                header={<Title text="Overall Experience" subtext="+ 6 years in total" mt={20} />}
+                header={<Title text="Overall Experience" subtext="+ 6 years in total" mt={12} />}
                 content={<OverallExperience />}
             />
             <Section
-                header={<Title text="Job Experience" subtext='+ 1 year in total' mt={10} />}
+                header={<Title text="Job Experience" subtext='+ 1 year in total' mt={12} />}
                 content={<JobExperiences />}
             />
         </div>

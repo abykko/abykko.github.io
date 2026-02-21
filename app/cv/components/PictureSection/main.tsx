@@ -32,11 +32,18 @@ export default function PictureSection() {
   function Pfp(): ReactNode {
     return (
       <Image
-        className="rounded-full justify-center-safe items-center place-content-center"
+        className="
+          rounded-2xl
+          border-1
+          shadow-xl
+          border-black/8
+          justify-center-safe
+          items-center
+          place-content-center"
         src="/pictures/pic.jpg"
         alt="Abykko Logo"
-        width={290}
-        height={290}
+        width={300}
+        height={300}
       />
     );
   }
